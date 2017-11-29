@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" type = "text/css" href = "../style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="DIY CNC Laser Module 2418 3018" />
+    <title>Home</title>
+</head>
+<body>
+    <div class="header-bar">
+        <h1><a href="../index.html">junglelegion</a></h1>
+        <nav>
+            <a href="index.html">2418 CNC</a> |
+            <a href="css/">3D Printing</a> |
+            <a href="js/">Updator Bot</a> |
+            <a href="js/">About Me</a>
+        </nav>
+    </div>
+    <div class="side-bar">
+        <h3>Contents:</h3>
+        <nav>
+            <a href="#C1">Parts</a><br>
+            <a href="#C2">Unboxing</a><br>
+            <a href="#C3">Disection</a><br>
+            <a href="#C4">Assembly</a><br>
+            <a href="#C5">Making It Work</a><br>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>The Laser Head</h1>
+        <h2 id="C1">The Parts</h2>
+            <hr/>
+            <p>
+                Here is the full parts list:
+            </p>
+            <ul>
+                <li><a href="https://www.amazon.com/gp/product/B01M24KHXU/">500mW Laser Module</a><br></li>
+                <li>Key Wire Stripper</li>
+                <li>Pliers</li>
+                <li>Soldering Iron</li>
+                <li>Heat Shrink Tubing</li>
+                <li>3M Sticky</li>
+            </ul>
+            <p>This is the laser module I chose to use. Just in case this link dies, this is what the page looks like so people know what to look for...</p>
+            <img src="images/amazon.png" alt="Amazon.com Page"/>
+            <p>
+                The module is very weak by laser cutter standards but that being said, 
+                I'm really only going to use it to burn in graphics and cut tape for PCB Stencils.
+                Moreover, for my use case, 500mmW is just perfect. I havent tried any other lasers but will update if I do.
+            </p>
+        <h2 id="C2">Unboxing</h2>
+            <hr/>
+            <p>
+                This is the box my laser arrived in. (I don't know how relevant this will be to you, but I like to record things...)
+            </p>
+            <img src="images/1121171838.jpg" alt="Box from Amazon"/>
+            <p>
+                Everything inclued in the box:
+            </p>
+            <img src="images/1121171839.jpg" alt="Contents"/>
+        <h2 id="C3">Disection</h2>
+            <hr/>
+            <p>
+                Cut the end with the barrel plug off of the included power supply. (Now you have a handy 12V PSU for other projects!)
+            </p>
+            <img src="images/1126171353.jpg" style="transform: scaleY(-1); z-index: 0;" alt="Snip the tip!"/>
+            <p>
+                Strip, slip and strip again exposing the positive and negative leads of the barrel plug.
+            </p>
+            <img src="images/1126171355.jpg" alt="Snip the tip!"/>
+            <p>
+                Solder and heatshrink your wires. I just soldered the plug to some spare paired jumpers which I had lying around. 
+                They fit the jack on the WoodPecker board and worked great for my purpose. I also double heatshrinked my solder job
+                because one can never be too careful.
+            </p>
+            <img src="images/1126171410a.jpg" alt="Snip the tip!"/>
+        <h2 id="C4">(re)Assembly</h2>
+            <hr/>
+            <p>
+                Hook up the laser module barrel plug to the laser port on the WoodPecker board. Obviously put GND to GND and Power to Power...
+            </p>
+            <img src="images/1128172213.jpg" style="transform: scaleY(-1); z-index: 0;" alt="It is Alive!"/>
+            <p>
+                In order to mount the laser to the CNC, I use two 3M command strips and attached the laser on the non heatsink finned side to the plastic of the Motor Mount.
+                This may cause some stress on the linear bearings on the z axis, but I believe that it is negligible and can be ignored.
+            </p>
+            <img src="images/1128172214a.jpg" alt="Time to mount"/>
+        <h2 id="C5">Making Everything Work</h2>
+            <hr/>
+    </div>
+</body>
+</html>

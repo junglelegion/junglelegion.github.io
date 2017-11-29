@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Raleway:300');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #364E4D;
+    padding-left: 5%;
+}
+
+.header-bar > h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 15px;
+    margin-left: 0;
+    float: left;
+    color: #CB983A;    
+}
+
+.header-bar > h1 > a {
+    color: #CB983A; 
+    text-decoration: none;
+}
+
+.header-bar > nav {
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 40px;
+    margin: 15px;
+    float: left;
+    color: #EBF0B2;
+}
+
+.header-bar > nav > a {
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #EBF0B2;
+    text-decoration: none;
+}
+
+.header-bar > nav > a:hover {
+    color: #B98F43;
+    transition: 0.3s;
+}
+
+.header-bar {
+    height: 65px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    background: #364E4D;
+    width: 90%;
+    border-bottom: 1px solid white;
+    z-index: 1;
+}
+
+.side-bar {
+    position: fixed; /* Set the navbar to fixed position */
+    margin-top: 65px;
+    float: left;
+    color: #EBF0B2;
+    margin-right: 25px;
+}
+
+.side-bar > h3 {
+    color: #CB983A;
+}
+
+.side-bar > nav {
+    margin-left: 15px;
+}
+
+.side-bar > nav > a {
+    color: #EBF0B2;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.side-bar > nav > a:hover {
+    color: #B98F43;
+    transition: 0.3s;
+}
+
+.content {
+    float: left;
+    margin-top: 60px;
+    margin-left: 160px;
+    color: #EBF0B2;
+}
+
+.content > h1 {
+    color: #CB983A;
+}
+
+.content > h2 {
+    color: #db725d;
+}
+
+.content a {
+    color:#EBF0B2;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.content a:hover {
+    color: #B98F43;
+    transition: 0.3s;
+}
+
+.content > p, .content > img {
+    max-width: 1000px;
+}
+
+:target:before {
+    content:"";
+    display:block;
+    height:85px; /* fixed header height*/
+    margin:-85px 0 0; /* negative fixed header height */
+    }
